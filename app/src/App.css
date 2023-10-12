@@ -1,0 +1,224 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://img.freepik.com/vetores-premium/padrao-perfeito-de-fast-food-no-estilo-doodle_650511-939.jpg?w=2000"); /* Add your background image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.app {
+  max-width: 800px;
+  margin: auto;
+  color: #fff;
+  border: 1px solid black;
+  box-shadow: 10px 10px 20px black;
+  background-color: rgba(29, 28, 34, 0.8);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.add-recipe {
+  display: grid;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+nav li {
+  margin: 0 20px;
+}
+.recipe-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.recipe-card {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  flex-basis: calc(33.33% - 20px);
+}
+.recipe-card img {
+  width: 100%;
+  height: 80%;
+}
+.recipe-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+.recipe-card p {
+  margin: 0;
+  color: #666;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+button[type="submit"] {
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 45%;
+}
+#Add {
+  background-color: grey;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 15%;
+}
+#Home {
+  background-color: grey;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 15%;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 50px;
+}
+.plus {
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.minus {
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 15px;
+}
+.recipe-details {
+  color: black;
+}
+/* .recipe-details-popup{
+  border: 3px solid black;
+  width: 50%;
+  height: 50%;
+} */
+.popup-img {
+  width: 50%;
+  height: 50%;
+}
+.close {
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.home {
+  display: flex;
+}
+.recipe-home {
+  max-width: 800px;
+  height: 400px;
+}
+.recipe-details-popup {
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  color: #333;
+}
+.heart-checkbox {
+  display: none;
+}
+.heart-label {
+  position: relative;
+  cursor: pointer;
+}
+.heart-label::before {
+  content: "\2665"; /* Unicode character for a heart */
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: gray;
+  transition: color 0.3s;
+}
+.heart-checkbox:checked + .heart-label::before {
+  color: red;
+}
+.hearts-checkbox {
+  display: none;
+}
+.hearts-label {
+  position: relative;
+  cursor: pointer;
+}
+.hearts-label::before {
+  content: "\2665"; /* Unicode character for a heart */
+  font-size: 24px;
+  /* position:; */
+  top: 0;
+  left: 0;
+  color: gray;
+  transition: color 0.3s;
+}
+.hearts-checkbox:checked + .hearts-label::before {
+  color: red;
+}
+
+/* #heatToggle:checked + #heatMap {
+  background-color: red;
+}
+#heatMap {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  transition: background-color 0.3s;
+} */
