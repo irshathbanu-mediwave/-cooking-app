@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import AddRecipe from "./components/Addrecipe";
 import Home from "./components/Home";
+import Heart from "./components/Heart";
 
 function App() {
   const [recipes, setRecipes] = useState(getFromStorage());
@@ -46,7 +47,9 @@ function App() {
             </button>
           </div>
         </ul>
+        <art />
       </nav>
+      <Heart />
       {showAddRecipe ? (
         <AddRecipe addRecipe={addRecipe} submitFunc={submitFunc} />
       ) : (

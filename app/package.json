@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
+    "react-animated-heart": "^0.0.8",
     "react-dom": "^18.2.0",
     "uuid": "^9.0.1",
     "uuid-v4": "^0.1.0"

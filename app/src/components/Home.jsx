@@ -51,6 +51,7 @@ function Home({ recipes }) {
             onClick={() => handleImageClick(index)}
           >
             <h3>{recipe.name}</h3>
+
             <img src={recipe.imageUrl} alt={recipe.name} />
           </div>
         ))}
@@ -78,15 +79,17 @@ function Home({ recipes }) {
                   </span>
                 </label>
               ))}
-              <img
-                className="popup-img"
-                src={selectedRecipe.imageUrl}
-                alt={selectedRecipe.name}
-              />
+              <div>
+                <img
+                  className="popup-img"
+                  src={selectedRecipe.imageUrl}
+                  alt={selectedRecipe.name}
+                />
+              </div>
+              <button className="close" onClick={clearSelectedRecipe}>
+                Close
+              </button>
             </div>
-            <button className="close" onClick={clearSelectedRecipe}>
-              Close
-            </button>
           </div>
         )}
       </div>
